@@ -18,7 +18,7 @@ const topMoviesDefault: TopMovieState = {
 const TopMovieContext = createContext<TopMovie>({
 	topMovies: topMoviesDefault,
 	getTopMovies: () => Promise.resolve(void 0),
-	toggleWatched: (imdbID: string) => {},
+	toggleWatched: () => {},
 });
 
 const TopMovieContextProvider: React.FC = ({ children }) => {
